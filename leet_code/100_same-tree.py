@@ -31,6 +31,7 @@ Input:     1         1
 
 Output: false
 """
+from leet_code import helper
 
 
 class Solution:
@@ -47,8 +48,6 @@ class Solution:
                 return True
         return False
 
-
-from leet_code import helper
 
 if __name__ == '__main__':
     """

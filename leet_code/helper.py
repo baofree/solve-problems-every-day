@@ -1,3 +1,5 @@
+from collections import deque
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -32,6 +34,34 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+
+
+def gen_bin_tree(node_list):
+    n = iter(node_list)
+    tree = TreeNode(next(n))
+    fringe = deque([tree])
+    while True:
+        head = fringe.popleft()
+        try:
+            val = next(n)
+            if val is not None:
+                head.left = TreeNode(val)
+                fringe.append(head.left)
+            val = next(n)
+            if val is not None:
+                head.right = TreeNode(val)
+                fringe.append(head.right)
+        except StopIteration:
+            break
+    return tree
+    # if index >= len(node_list) or node_list[index] is None:
+    #     return None
+    # l = index * 2
+    # r = l + 1
+    # node = TreeNode(node_list[index])
+    # node.left(gen_bin_tree(node_list, l))
+    # node.right(gen_bin_tree(node_list, r))
+    # return node
 
 
 def get_bin_tree():
