@@ -9,3 +9,7 @@
 ### Coding challenge websites
 
 - [LeetCode](https://leetcode.com)
+
+### Kakao
+
+- [2018 1차 코딩](http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)
