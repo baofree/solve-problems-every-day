@@ -22,7 +22,6 @@ class Solution:
     def reverse(self, s):
         for index in range(int(len(s) / 2)):
             temp = s[index]
-
             s[index] = s[len(s) - 1 - index]
             s[len(s) - 1 - index] = temp
         return s
