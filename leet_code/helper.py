@@ -38,6 +38,8 @@ class TreeNode:
 
 
 def gen_bin_tree(node_list):
+    if not node_list:
+        return None
     n = iter(node_list)
     tree = TreeNode(next(n))
     fringe = deque([tree])
