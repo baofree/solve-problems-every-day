@@ -14,3 +14,7 @@
 
 - [2018 1차 코딩](http://tech.kakao.com/2017/09/27/kakao-blind-recruitment-round-1/)
 - [2018 3차 코딩](http://tech.kakao.com/2017/11/14/kakao-blind-recruitment-round-3/)
+
+### Youtube
+
+- [엔지니어대한민국](https://www.youtube.com/channel/UCWMAh9cSkEn8v42YRO90BHA)
